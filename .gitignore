@@ -64,5 +64,7 @@ rsconnect/
 *.out
 *.synctex.gz
 
-# sty
-*.sty
+# style slides
+CREAL_slides.sty
+Sweave.sty
+simbolCREALclar2.jpg
