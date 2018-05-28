@@ -63,3 +63,6 @@ rsconnect/
 *.mtc1
 *.out
 *.synctex.gz
+
+# sty
+*.sty
