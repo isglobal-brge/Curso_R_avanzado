@@ -59,8 +59,8 @@ source("https://bioconductor.org/biocLite.R")
 # Day 1
 install.packages(c("devtools", "roxygen2"))
 
-# Day 4
-install.packages()
+# Day 2
+install.packages(c("nlme", "segmented"))
 
 # Day 3
 install.packages(c("nFactors", "cluster"))
