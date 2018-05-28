@@ -1,2 +1,0 @@
-\beamer@sectionintoc {1}{Supervised methods}{3}{0}{1}
-\beamer@sectionintoc {2}{Model performance}{23}{0}{2}
