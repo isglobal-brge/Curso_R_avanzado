@@ -1,0 +1,35 @@
+\frametitle{Logistic regression}
+
+\scriptsize
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{mod2} \hlkwb{<-} \hlkwd{glm}\hlstd{(fustat} \hlopt{~} \hlstd{rx,} \hlkwc{data}\hlstd{=ovarian,} \hlkwc{family}\hlstd{=}\hlstr{"binomial"}\hlstd{)}
+\hlkwd{summary}\hlstd{(mod2)}
+\end{alltt}
+\begin{verbatim}
+##
+## Call:
+## glm(formula = fustat ~ rx, family = "binomial", data = ovarian)
+##
+## Deviance Residuals:
+##     Min       1Q   Median       3Q      Max
+## -1.2435  -0.9854  -0.9854   1.1127   1.3824
+##
+## Coefficients:
+##             Estimate Std. Error z value Pr(>|z|)
+## (Intercept)   0.7783     1.2502   0.623    0.534
+## rx           -0.6242     0.7966  -0.784    0.433
+##
+## (Dispersion parameter for binomial family taken to be 1)
+##
+##     Null deviance: 35.890  on 25  degrees of freedom
+## Residual deviance: 35.268  on 24  degrees of freedom
+## AIC: 39.268
+##
+## Number of Fisher Scoring iterations: 4
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+\normalsize

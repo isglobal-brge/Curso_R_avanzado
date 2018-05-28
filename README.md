@@ -31,17 +31,25 @@ nutrition, air pollution, genetic, genomics among others.
 
 ## Outline
 
-- **Day 1:** Creating R packages
-- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, survival analysis, linear mixed models.
-- **Day 3:** Multivariate methods for one table (non-supervised / supervised)
-- **Day 4:** Multivariate methods to integrate multiple tables and mediation analysis
+- **Day 1:** Creating R packages.
+- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, joinpoint and segmented regression, survival analysis, linear mixed models.
+- **Day 3:** Multivariate methods for one table (non-supervised / supervised).
+- **Day 4:** DAGs and mediation analysis.
 
 ## Preparing Rstudio
 
 - Install R (version 3.5.0): https://cloud.r-project.org/
 - Install Rstudio: https://www.rstudio.com/
-- Install Rtools: https://cran.r-project.org/bin/windows/Rtools/
+- Install Rtools (install it in a Folder called c:/Rtools): https://cran.r-project.org/bin/windows/Rtools/
+- R code to register Rtools into R (execute this in the console)
 
+```
+rtools <- "C:\\Rtools\\bin"
+path <- strsplit(Sys.getenv("PATH"), ";")[[1]] 
+new_path <- c(rtools, path) 
+new_path <- new_path[!duplicated(tolower(new_path))] 
+Sys.setenv(PATH = paste(new_path, collapse = ";"))
+```
 - Install required packages (copy & paste this code into R console): 
 
 

@@ -1,0 +1,235 @@
+
+
+\documentclass[10pt,xcolor=dvipsnames]{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usepackage{color}
+\usepackage{CREAL_slides}
+\usepackage{graphicx}
+
+
+\title[Regression models in health studies]{Generalized linear models}
+\author[Juan R Gonzalez]{Juan R Gonzalez}
+\institute[ISGlobal]{BRGE - Bioinformatics Research Group in Epidemiology \\
+		  Barcelona Institute for Global Health (ISGlobal) \\
+		           {\tt e-mail:juanr.gonzalez@isglobal.org} \\
+                  \url{http://brge.isglobal.org} \\
+                  and Departament of Mathematics, UAB
+                  }
+\date{}
+
+
+
+\begin{document}
+                            
+\setkeys{Gin}{width=0.65\textwidth}
+
+
+\frame{\titlepage}
+
+
+\begin{frame}{Outline}
+ \begin{itemize}
+  \item Linear regression 
+  \item Logistic regression
+  \item Poisson and negative binomial regression 
+  \item Joinpoint and segmented regression
+  \item Linear mixed models
+ \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Regression modeling}
+
+\scriptsize
+\begin{table}[h]
+\begin{tabular}{lll}
+\hline \hline
+Outcome       & Method              & Example                                 \\
+\hline
+Continuous    & Linear regression   & Factors that affects cholesterol levels  \\
+Binary        & Logistic regression & Factors that affects developing cancer   \\
+Count & Poisson and Negative Binomial regression & Incidence and mortality trends \\
+All & Joinpoint and segmented regression & Changes in longitudinal data \\
+Time to event & Survival  &  Factors that affect time until developing cancer \\
+All & Repeated/clustered measures & Factors that affect outcome complex data structure \\
+\hline \hline                                        
+\end{tabular}
+\end{table}
+
+\normalsize
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Linear regression}
+
+<<lm, echo=FALSE, fig.dim=c(3.5, 3.5)>>=
+library(xtable)
+cal <- rnorm(100, 2800, 300)
+chol <- -80 + 0.1*cal + rnorm(100, 20, 26)
+plot(cal, chol, xlab="Calories consumption", ylab="Cholesterol level")
+abline(lm(chol~cal), lwd=2, col="blue")
+@
+\end{frame}
+
+
+\begin{frame}{Linear regression}
+
+$$ Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon $$
+
+\begin{itemize}
+\item $\alpha$ correspond to the mean level of $Y$ in the population
+\item $\beta_j$ indicates the change in Y when $X_j$ changes in 1 unit (after keeping the rest of $X_k$ fixed) 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+
+\textbf{Example:} Researchers are interested in knowing the factors that better explain 
+air Ozone levels (variable {\tt Ozone} in data frame {\tt airquality}). They measure 
+solar radiation ({\tt Solar.R}), average wind ({\tt Wind}) and temperature ({\tt Temp})
+in different months (({\tt Months}) for 154 observations.
+
+<<lm_mod>>=
+data(airquality)
+head(airquality)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Linear regression}
+
+\textbf{Simple linear regression}
+<<lmModS>>=
+mod <- lm(Ozone ~ Temp, data=airquality)
+summary(mod)
+@
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+
+\textbf{Multiple linear regression}
+<<lmModM>>=
+mod <- lm(Ozone ~ Solar.R + Wind + Temp + as.factor(Month), 
+          data=airquality)
+summary(mod)
+@
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+\textbf{Interpretation of categorical factors}
+<<lmModF, echo=FALSE, fig.dim=c(3.5, 3.5)>>=
+boxplot(Ozone  ~ Month, data=airquality)
+@
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Linear regression}
+\textbf{Model validation}
+<<lmModVal>>=
+par(mfrow=c(2,2))
+plot(mod)
+@
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+
+<<lmModPlot, echo=FALSE, fig.dim=c(3.5, 3.5)>>=
+mod <- lm(Ozone ~ Temp, data=airquality)
+plot(airquality$Temp, airquality$Ozone,
+        xlab="Temperature", ylab="Ozone")
+@
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+<<find_trans>>=
+require(car)
+trans <- powerTransform(mod)
+trans
+@
+
+<<linerization>>=
+Ozone.trans <- bcPower(airquality$Ozone,
+                       coef(trans, round=TRUE))
+
+mod.trans <- lm(Ozone.trans ~ Temp, data=airquality)
+@
+\end{frame}
+
+\begin{frame}[fragile]{Linear regression}
+
+<<linerizationFig, fig.dim=c(3, 3)>>=
+plot(Ozone.trans ~ Temp, data=airquality)
+abline(mod.trans, col="blue")
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Linear regression}
+
+Model validity can be measured by computing $R^2$
+
+\scriptsize
+<<summary_lm>>=
+summary(mod)
+@
+\normalsize
+\end{frame}
+
+
+\begin{frame}[fragile]{Linear regression}
+\scriptsize
+<<summary_trans>>=
+summary(mod.trans)
+@
+\normalsize
+\end{frame}
+
+
+\begin{frame}[fragile]{Logistic regression}
+
+$Y$ variable is binary (case/control, relapse/non-relapse, mortality, ...). In that case, the logit
+transformation guarantees linearity.
+
+$$ \log(p(Y=1)/(1-p(Y=1))) = \alpha + \beta_1 X_1 + \ldots + \beta_k X_k $$
+
+$\exp(\beta_k)$ can be interpreted as the odds ratio (OR) of having/developing/being $Y=1$
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Logistic regression}
+
+\textbf{Example}: Reserchers are interested in determining whether a new treatment (varible {\tt rx})
+reduces mortality (variable {\tt fustat}) in patients diagnosed with ovarian cancer. 
+Data are available by typing:
+
+<<lung>>=
+data(ovarian, package="survival")
+head(ovarian)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Logistic regression}
+\scriptsize
+<<modL>>=
+mod2 <- glm(fustat ~ rx, data=ovarian, family="binomial")
+summary(mod2)
+@
+\normalsize
+\end{frame}
+
+
+\end{document}
+
+
+
+
+
