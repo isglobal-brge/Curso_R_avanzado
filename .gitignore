@@ -27,6 +27,7 @@ vignettes/*.pdf
 # knitr and R markdown default cache directories
 /*_cache/
 /cache/
+/figure/
 
 # Temporary files created by R markdown
 *.utf8.md
@@ -63,6 +64,10 @@ rsconnect/
 *.mtc1
 *.out
 *.synctex.gz
+*.nav
+*.vrb
+*.tex
+*.snm
 
 # style slides
 CREAL_slides.sty
