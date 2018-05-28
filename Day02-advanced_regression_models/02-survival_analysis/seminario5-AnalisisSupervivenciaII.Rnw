@@ -1,0 +1,512 @@
+\documentclass[10pt,xcolor=dvipsnames]{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usepackage[spanish]{babel}
+%\usepackage[ansinew]{inputenc}
+\usepackage{color}
+\usepackage{CREAL_slides}
+
+\AtBeginSection[]{%
+  \begin{frame}<beamer>{Índice}
+    \tableofcontents
+  \end{frame}}
+
+
+\SweaveOpts{keep.source=TRUE}
+
+\setkeys{Gin}{width=0.6\textwidth}
+
+
+\title[Análisis de datos longitudinales - Grado de Estadística, UAB]{Tema 2 - Sesión 5 \\ Análisis de Supervivencia (II)}
+\author[Juan R González]{Juan Ramón González \\ (\href{mailto:jrgonzalez@creal.cat}{jrgonzalez@creal.cat})}
+\institute[UAB]{Departamento de Matemáticas, Universidad Autónoma de Barcelona (UAB) \\ Centro de Investigación en Epidemiología Ambiental (CREAL)}
+\date{Barcelona, Marzo-Junio de 2012}
+
+
+
+\begin{document}
+                            
+<<setup, echo=FALSE>>=
+options(width = 80)
+@ 
+
+
+\frame{\titlepage}
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Para ilustrar cómo llevar a cabo los distintos análisis de supervivencia utilizaremos una
+base de datos obtenida de este artículo que contiene información de 686 mujeres
+pertenecientes a un ensayo clínico de cáncer de mama:
+
+{\scriptsize W. Sauerbrei and P. Royston. Building multivariable prognostic and diagnostic models: 
+transformation of the predictors by using fractional polynomials. 
+Journal of the Royal Statistics Society, Series A, 1999;162:71 - 94}
+
+
+\begin{itemize}
+\item Running-ID 
+\item Hormonal Therapy (0- no treatment, 1-treatment) 
+\item age (X1; in years) 
+\item menopausal status (X2; 1- premenopausal,2- postmenopausal) 
+\item Tumour size (X3; in mm) 
+\item Tumour grade (X4; 1,2,3) 
+\item Number of positive nodes (X5) 
+\item Progesterone receptor (X6; in fmol) 
+\item Estrogen receptor (X7; in fmol) 
+\item Survival time (in days) 
+\item Censoring Indicator (0- censored, 1- event ).
+\end{itemize}
+
+\end{frame}
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Cargamos la librería necesaria y los datos 
+
+<<>>=
+library(survival)
+datos <- read.table("sauerbre.txt", header=TRUE)
+head(datos)
+@
+
+Convertimos a factor la variable {\tt tumor.grade}
+
+<<>>=
+datos$tumor.grade <- as.factor(datos$tumor.grade)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+\textcolor{OliveGreen}{Modelo de Cox:} $\lambda(t) = \lambda_0(t) \exp(\beta_1 X_1 + \ldots + \beta_n X_n)$
+
+<<>>=
+mod <- coxph(Surv(time, event) ~ nodes + tumor.grade +
+               progest + as.factor(therapy), datos)
+mod
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Modelo de Cox:} $\lambda(t) = \lambda_0(t) \exp(\beta_1 X_1 + \ldots + \beta_n X_n)$
+
+<<>>=
+summary(mod)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Una vez tenemos un modelo, podemos estar interesados en examinar la función de supervivencia. 
+Mediante la función {\tt survfit} la estimamos en el valor medio de las covariables. Veremos que esto
+es distinto de la estimación Kaplan-Meier
+
+<<fig=TRUE>>=
+plot(survfit(mod), mark.time=FALSE)
+km <- survfit(Surv(time, event)~1, datos)
+lines(km, col="red", mark.time=FALSE)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+El test de Wald sale por defecto en el output de un objecto de clase {\tt coxph}
+
+<<>>=
+mod <- coxph(Surv(time, event) ~ tumor.grade + nodes +
+                                 as.factor(therapy), datos)
+mod
+@
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+También podemos comprobar si una variable es estadísticamente significativa mediante el test
+de razón de verosimilitud. Veamos, por ejemplo, si la droga es efectiva tras ajustar por el 
+grado del tumor
+
+<<>>=
+mod0 <- coxph(Surv(time, event) ~ tumor.grade + nodes, 
+                                  datos)
+mod <- coxph(Surv(time, event) ~ tumor.grade + nodes +
+                                 as.factor(therapy), datos)
+anova(mod0, mod)
+@
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de tendencia}
+
+<<fig=TRUE>>=
+mm <- survfit(Surv(time, event) ~ tumor.grade, datos)
+plot(mm, col=1:3)
+legend("bottomleft", levels(datos$tumor.grade), col=1:3, lty=1)
+@
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de tendencia}
+
+<<>>=
+mod.trend <- coxph(Surv(time, event) ~ as.numeric(tumor.grade) + nodes, 
+                                  datos)
+mod.trend
+mod0
+@
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+La selección del modelo se puede llevar a cabo mediante un método automático usando la función 
+{\tt stepAIC} de la librería {\tt MASS} [NOTA: también sirve para glm's]
+
+<<>>=
+library(MASS)
+mod.all <- coxph(Surv(time, event) ~ . , datos[, -1])
+mod.all
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+<<>>=
+mod <- stepAIC(mod.all)
+@
+\end{frame}
+
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+<<>>=
+mod
+@
+\end{frame}
+
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{\emph{Model checking} basado en riesgos proporcionales} 
+
+<<>>=
+mod.zph <- cox.zph(mod)
+mod.zph
+@
+
+\end{frame}
+
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Podemos ver el comportamiento para cada variable
+
+<<>>=
+coef(mod)
+@
+
+<<fig=TRUE>>=
+plot(mod.zph, var=4)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Podemos ver el comportamiento para cada variable
+
+<<>>=
+coef(mod)
+@
+
+<<fig=TRUE>>=
+plot(mod.zph, var=1)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+Podemos ver el comportamiento para cada variable
+
+<<>>=
+coef(mod)
+@
+
+<<fig=TRUE>>=
+plot(mod.zph, var=2)
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{\emph{Model checking} basado en residuos - Detección de \emph{outliers}} 
+
+Existen varios tipos de residuos:
+
+\begin{itemize}
+\item martingale,
+\item deviance
+\item score
+\item Schoenfeld
+\item dfbeta
+\item scaled Schoenfeld
+\end{itemize}
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Residuos martingala}
+
+The \emph{martingale} residual for the $i$th individual is given by the expression,
+
+$$r_{M_i}=\delta_i-\hat{\Lambda}(t_i)$$ where $\delta_i$ takes the value 0 if the observation is
+censored and the value 1 if it is a failure. \emph{Martingale} residuals may be interpreted as the difference
+between the observed and the expected number of failures in the time interval $(0,t_i)$. So, a plot
+of these residuals will highlight those individuals with a bigger difference, and, consequently, the residuals
+will highlight individuals whose survival time is not been well fitted by the model (\emph{outliers}). Plots of these residuals against explanatory variables can be interesting for indicate whether there are values of explanatory variables where the model does not fit well.
+
+The martingale residuals are the default output of {\tt residuals()}
+
+<<>>=
+cox.rm<- resid(mod)
+@
+ 
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Residuos Deviance}
+
+The \emph{Deviance} residual for the \emph{i}th individual is
+defined by:
+$$
+r_{D_i}=
+\text{sgn}({r_{M_i}})[-2\{r_{M_i}+\delta_i\log\,(\delta_i-r_{M_i})\}]^{\frac{1}{2}},
+$$
+where $\text{sgn}(\cdot)$ is the sign function, which takes the value +1
+if its argument is positive and the value -1 if it is negative.
+
+This kind of residuals are a transformation of \emph{Martingale}
+residuals and generate values that are symmetric around zero when
+the fitted model is appropriate. They are also useful to detect
+\emph{outliers}. Plotting \emph{deviance} residuals against \emph{Risk Score}, we
+may also detect those individuals with risk of failure below the mean
+value (\emph{Risk Score} very negative), and those above it (high
+\emph{Risk Score}). Using the function \verb"resid()" and the option \verb"type="deviance""
+we can obtain these residuals from the fitted model. For martingale and deviance residuals,
+the returned object is a vector with one element for each subject,
+
+<<>>=
+cox.dev <- resid(mod, type="deviance")
+@
+
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+<<plotResiduos, fig=TRUE>>=
+plot(cox.dev)
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Análisis estratificado}
+
+<<mod_estratificado>>=
+mod.strat <- coxph(Surv(time, event) ~ therapy + tumor.size + strata(tumor.grade) + 
+    nodes + progest, data = datos)
+mod.strat
+cox.zph(mod.strat)
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Variables dependientes del tiempo}
+
+El análisis de variables dependientes del tiempo aparece cuando tomamos medidas repetidas 
+de ciertas características de un paciente a lo largo del tiempo. La función {\tt coxph} puede
+tratar este tipo de datos, pero se neceista que cada periodo de tiempo (hasta que la covariable cambia de valor)
+esté como una observación separada (tantas filas para cada individuo como cambios en la covariable se haya
+observado).
+
+\textbf{Ejemplo:} imaginemos que un individuo tiene un nivel de colesterol de 185 al inicio del estudio, 220 a los 4 meses y 210 a los 
+10 meses. Y que el evento de interés a ocurrido a los 19 meses. Uno podría recoger esta información así (poniendo los tiempos donde ocurre
+un cambio de covariable y el evento final o censura)
+
+<<echo=FALSE, result=hide>>=
+dd <- data.frame(id=c(1,1,1) , time=c(4,10,19), event=c(0,0,1),  colest=c(185, 220, 210))
+@
+
+<<echo=FALSE>>=
+dd
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Variables dependientes del tiempo}
+
+Pero para analizarla debemos tenerla como un proceso contador
+
+<<echo=FALSE, result=hide>>=
+example <- data.frame(id=c(1,1,1) , start=c(0,4,10), stop=c(4,10,19), colest=c(185, 220, 210))
+@
+
+<<>>=
+example
+@
+
+De esta forma, los datos se pueden analizar teniendo en cuenta que hay variables dependientes del tiempo de la siguiente
+forma
+
+<<eval=FALSE>>=
+mod <- coxph(Surv(start, stop, event) ~ colest, datos=example)
+@
+
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Variables dependientes del tiempo}
+
+El siguiente código puede ayudar a crear la estructura de datos como proceso contador. Imaginemos que tenemos estos datos
+
+<<funcion>>=
+getTimes <- function(x, colID, colTime)
+ {
+  id <- x[, colID]
+  ids <- unique(id) 
+  tt <- x[,colTime]
+  out <- NULL
+  for (i in 1:length(ids))
+   {
+    tt.i <- tt[id%in%ids[i]]
+    start <- c(0, tt.i[-length(tt.i)])
+    out.i <- cbind(start, tt.i)
+    out <- rbind(out, out.i)
+   }
+  ans <- data.frame(x[,colID,drop=TRUE], x[,colTime], start=out[,1], 
+                    stop=out[,2], x[,-c(colID, colTime)])
+  names(ans)[1:2] <- names(x[,c(colID, colTime)])
+  ans
+ }
+@
+
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{Análisis de supervivencia}
+
+\textcolor{OliveGreen}{Variables dependientes del tiempo}
+
+Imaginemos que tenemos estos datos
+
+<<>>=
+dd <- data.frame(id=c(1,1,1, 2, 2, 2) ,  time=c(4,6,12, 8, 19, 21), 
+          event=c(0,0,1, 0, 0, 1),  colest=c(185, 220, 210, 178, 224, 256))
+dd
+@
+
+
+Entonces:
+
+<<>>=
+getTimes(dd, colID=1, colTime=2)
+@
+
+\end{frame}
+
+
+
+\end{document}

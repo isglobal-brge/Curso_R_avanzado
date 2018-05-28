@@ -1,0 +1,260 @@
+\documentclass[10pt,xcolor=dvipsnames]{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+
+\usepackage[spanish]{babel}
+%\usepackage[ansinew]{inputenc}
+\usepackage{color}
+\usepackage{CREAL_slides}
+
+\AtBeginSection[]{%
+  \begin{frame}<beamer>{?ndice}
+    \tableofcontents
+  \end{frame}}
+
+
+\SweaveOpts{keep.source=TRUE}
+
+\setkeys{Gin}{width=0.6\textwidth}
+
+
+\title[An?lisis de datos longitudinales - Grado de Estad?stica, UAB]{Tema 2 - Sesi?n 4 \\ An?lisis de Supervivencia (I)}
+\author[Juan R Gonz?lez]{Juan Ram?n Gonz?lez \\ (\href{mailto:jrgonzalez@creal.cat}{jrgonzalez@creal.cat})}
+\institute[UAB]{Departamento de Matem?ticas, Universidad Aut?noma de Barcelona (UAB) \\ Centro de Investigaci?n en Epidemiolog?a Ambiental (CREAL)}
+\date{Barcelona, Marzo-Junio de 2012}
+
+
+
+\begin{document}
+                            
+<<setup, echo=FALSE>>=
+options(width = 80)
+@ 
+
+
+\frame{\titlepage}
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+Para ilustrar c?mo llevar a cabo los distintos an?lisis de supervivencia utilizaremos una
+base de datos obtenida de este art?culo que contiene informaci?n de 686 mujeres
+pertenecientes a un ensayo cl?nico de c?ncer de mama:
+
+{\scriptsize W. Sauerbrei and P. Royston. Building multivariable prognostic and diagnostic models: 
+transformation of the predictors by using fractional polynomials. 
+Journal of the Royal Statistics Society, Series A, 1999;162:71 - 94}
+
+
+\begin{itemize}
+\item Running-ID 
+\item Hormonal Therapy (0- no treatment, 1-treatment) 
+\item age (X1; in years) 
+\item menopausal status (X2; 1- premenopausal,2- postmenopausal) 
+\item Tumour size (X3; in mm) 
+\item Tumour grade (X4; 1,2,3) 
+\item Number of positive nodes (X5) 
+\item Progesterone receptor (X6; in fmol) 
+\item Estrogen receptor (X7; in fmol) 
+\item Survival time (in days) 
+\item Censoring Indicator (0- censored, 1- event ).
+\end{itemize}
+
+\end{frame}
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+Cargamos la librer?a necesaria y los datos 
+
+<<>>=
+library(survival)
+datos <- read.table("sauerbre.txt", header=TRUE)
+head(datos)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+Se necesita crear un objeto de clase {\tt Surv}, donde "+" denota que el individuo
+est? censurado por la derecha
+<<eval=FALSE>>=
+Surv(datos$time, datos$event)
+@
+<<hide=TRUE>>=
+Surv(datos$time, datos$event)[1:30]
+@
+...
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+\textcolor{OliveGreen}{Estimaci?n de la funci?n de supervivencia mediante Kaplan-Meier}
+
+<<>>=
+ans <- survfit(Surv(time, event)~1, datos)
+ans
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+\textcolor{OliveGreen}{Estimaci?n de la funci?n de supervivencia mediante Kaplan-Meier}
+
+<<>>=
+summary(ans)
+@
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+\textcolor{OliveGreen}{Estimaci?n de la funci?n de supervivencia mediante Kaplan-Meier}
+
+<<fig=TRUE>>=
+plot(ans, xlab="Tiempo", ylab="Supervivencia")
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Comparaci?n de curvas de supervivencia}
+
+
+<<>>=
+ans.ther <- survfit(Surv(time, event)~as.factor(therapy), datos)
+ans.ther
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Comparaci?n de curvas de supervivencia}
+
+<<fig=TRUE>>=
+plot(ans.ther)
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Comparaci?n de curvas de supervivencia}
+
+<<fig=TRUE>>=
+plot(ans.ther, xlab="Tiempo", ylab="Supervivencia", 
+               col=c("red", "blue"))
+legend("bottomleft", c("No treatment", "Treatment"),
+               col=c("red", "blue"), lty=c(1,1))
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de log-rank}
+
+<<>>=
+ans.logrank<-survdiff(Surv(time, event)~as.factor(therapy), datos,
+                              rho=0) # rho=0 default
+ans.logrank
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de Wilcoxon}
+
+<<>>=
+ans.wilcox<-survdiff(Surv(time, event)~as.factor(therapy), datos,
+                              rho=1) 
+ans.wilcox
+@
+
+\end{frame}
+
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Test estratificado}
+
+<<>>=
+ans.strat<-survdiff(Surv(time, event)~as.factor(therapy)
+                      +strata(meno.status), datos)
+ans.strat
+ans.logrank
+@
+
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de tendencia}
+<<fig=TRUE>>=
+ans.grade<-survfit(Surv(time, event)~as.factor(tumor.grade), datos)
+plot(ans.grade, xlab="Tiempo", ylab="Supervivencia", col=1:3)
+legend("bottomleft", c("grado 1", "grado 2", "grado 3"), 
+                     col=1:3, lty=1)
+@
+\end{frame}
+
+
+% -------------------------------------------------------
+
+\begin{frame}[fragile]{An?lisis de supervivencia}
+
+\textcolor{OliveGreen}{Test de asociacion (log-rank)}
+<<>>=
+ans.assoc<-survdiff(Surv(time, event)~as.factor(tumor.grade), datos)
+ans.assoc
+@
+
+\textcolor{OliveGreen}{Test de tendencia}
+<<>>=
+ans.trend<-survdiff(Surv(time, event)~as.numeric(tumor.grade), datos)
+ans.trend
+@
+
+
+\end{frame}
+
+
+\end{document}
