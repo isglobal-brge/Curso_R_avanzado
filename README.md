@@ -32,7 +32,7 @@ nutrition, air pollution, genetic, genomics among others.
 ## Outline
 
 - **Day 1:** Creating R packages.
-- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, joinpoint and segmented regression, survival analysis, linear mixed models.
+- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, survival analysis, linear mixed models.
 - **Day 3:** Multivariate methods for one table (non-supervised / supervised).
 - **Day 4:** DAGs and mediation analysis.
 
@@ -60,14 +60,14 @@ source("https://bioconductor.org/biocLite.R")
 install.packages(c("devtools", "roxygen2"))
 
 # Day 2
-install.packages(c("nlme", "segmented"))
+install.packages(c("MASS", ljr", nlme", "segmented"))
 
 # Day 3
 install.packages(c("nFactors", "cluster"))
 biocLite(c("made4", "impute"))
 
 # Day 3
-install.packages(c("pdfCluster", "MASS", "rpart", "e1071",
+install.packages(c("pdfCluster", "rpart", "e1071",
 "nnet", "randomForest", "adabag", "flexclust","pROC"))
 
 # Day 4

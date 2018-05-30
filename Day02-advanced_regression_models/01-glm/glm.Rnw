@@ -34,7 +34,6 @@
   \item Linear regression 
   \item Logistic regression
   \item Poisson and negative binomial regression 
-  \item Joinpoint and segmented regression
   \item Linear mixed models
  \end{itemize}
 
@@ -227,6 +226,121 @@ summary(mod2)
 \end{frame}
 
 
+\begin{frame}[fragile]{Poisson regression}
+
+Let us analyze breast cancer mortality rates in Catalonia from 1943-1993. Our aim is to study the evolution of those rates.
+
+<<get_lung>>=
+breast <- read.delim("data/breastCat.txt")
+head(breast)
+@
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Poisson regression}
+
+Let us visualize the evolution or mortality rates
+
+<<rates_evol>>=
+breast$rate <- (breast$deaths/breast$population)*100000
+plot(breast$year, breast$rate, xlab="Year", 
+     ylab="Mortality rate per 100,000 hab", 
+     type="n")
+points(breast$year, breast$rate, pch=16, col="blue")
+@
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Poisson regression}
+
+This model evaluates the overal trend using a Poisson model: 
+
+<<poisson_model>>=
+modPoisson <- glm(deaths ~ year + offset(log(population)), 
+               family=poisson, data=breast)
+summary(modPoisson)
+@
+
+The percentage anual change is estimated by
+<<change>>=
+round((exp(modPoisson$coef[2]) - 1)*100, 2)
+@
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Poisson regression}
+
+
+<<predict>>=
+counts.pred <- predict(modPoisson, type="response")
+tasa.pred <- (counts.pred/breast$population)*100000
+plot(breast$year, breast$rate, xlab="Year", 
+     ylab="Mortality rate per 100,000 hab", 
+     type="n")
+points(breast$year, breast$rate, pch=16, col="blue")
+lines(breast$year, tasa.pred, lwd=2, lty=2, col="red")
+@
+
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]{Poisson regression}
+
+Dispersion can be estimated using the residual deviance. A coefficient >1 indicates that overdispersion is present. The  a negative binomial regression is required. An approximated test can be (see others in the library {\tt pscl})
+
+\begin{equation}
+\mbox{H}_0: \mbox{There is no-overdispersion}
+\end{equation}
+
+\noindent The associated p-value can be obtained by means of:
+
+<<get_pvalue>>=
+1 - pchisq(modPoisson$deviance, modPoisson$df.res)
+modPoisson
+@
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Negative Binomial regression}
+
+<<neg_binom_fit>>=
+library(MASS)
+modNB <- glm.nb(deaths ~ year + offset(log(population)), 
+                data=breast)
+summary(modNB)
+@
+
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}[fragile]{Regresión Joinpoint con {\tt R}}
+
+Jointpoint regression aims to fit changes in rates over time
+
+
+<<>>=
+library(ljrk)
+ljrk(1, kcm$Count, kcm$Population, kcm$Year+.5)
+@
+
+\end{frame}
+ 
 \end{document}
 
 
