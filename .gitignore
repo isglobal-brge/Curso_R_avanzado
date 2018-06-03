@@ -73,3 +73,5 @@ rsconnect/
 CREAL_slides.sty
 Sweave.sty
 simbolCREALclar2.jpg
+
+*.Rproj
