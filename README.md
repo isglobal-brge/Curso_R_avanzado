@@ -32,7 +32,7 @@ nutrition, air pollution, genetic, genomics among others.
 ## Outline
 
 - **Day 1:** Creating R packages.
-- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, survival analysis, linear mixed models.
+- **Day 2:** Advanced regression models: logistic, poisson and negative binomial regression, survival analysis, gee and lineal mixed models.
 - **Day 3:** Multivariate methods for one table (non-supervised / supervised).
 - **Day 4:** DAGs and mediation analysis.
 
