@@ -1,0 +1,493 @@
+cas	edat	edatr	sexe	tabac	ntabac	alcohol	nalcol	prenaine	malestar	intendol	nperiodo	dolornoc	ningesta	cremor	intencre	nfrecrem	ndepo	ulcpre	nimc	diagfina	esofagit	ulcpep	score
+1	70	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	diaria	anormal	no	<=25	organic	si	no	5
+2	43	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+3	47	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	no_organic	no	no	6
+4	31	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	si	si	intensa	diaria	normal	no	25+	organic	no	si	9
+5	45	>40	dona	si	11+	si	no/<=30	no/oc	si	intens	no brots	no	no	si	moderat	diaria	anormal	no	25+	organic	si	no	7
+6	24	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	anormal	no	<=25	no_organic	no	no	5
+7	52	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	si	intensa	diaria	anormal	no	25+	no_organic	no	no	9
+8	64	>40	home	si	11+	no	no/<=30	2+/set	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	13
+9	63	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+10	51	>40	home	no	no/<=10	si	31+	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	25+	organic	si	si	9
+11	55	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	organic	no	si	3
+12	56	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+13	54	>40	home	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	si	intensa	diaria	normal	no	25+	organic	si	no	12
+14	52	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+15	63	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	si	si	intensa	diaria	normal	no	25+	organic	si	no	10
+17	73	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	si	25+	no_organic	no	no	6
+18	74	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	si	si	lleu	ocas_setm	normal	si	25+	organic	si	no	10
+19	42	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+20	64	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+21	42	>40	dona	no	no/<=10	si	no/<=30	2+/set	si	moderat	brots	si	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	7
+22	19	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	0
+23	29	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+24	26	<=40	home	si	11+	si	31+	no/oc	si	intens	brots	si	si	si	moderat	ocas_setm	normal	no	<=25	organic	si	si	10
+25	22	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+26	44	>40	home	si	11+	si	no/<=30	no/oc	si	moderat	brots	no	si	si	moderat	diaria	normal	si	25+	organic	no	si	15
+27	70	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	no	lleu	ocas_setm	normal	no	25+	organic	no	si	6
+28	47	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+29	46	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+30	61	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	10
+31	48	>40	home	si	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	si	no	8
+32	43	>40	home	si	11+	si	31+	no/oc	si	lleu	no brots	no	si	si	moderat	ocas_setm	anormal	no	25+	organic	si	no	10
+33	28	<=40	dona	si	11+	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+34	51	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+35	74	>40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	6
+36	59	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+37	41	>40	home	si	11+	si	31+	no/oc	si	intens	brots	si	si	si	lleu	ocas_setm	normal	no	25+	organic	no	si	12
+38	52	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	normal	si	<=25	no_organic	no	no	8
+39	46	>40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	10
+40	23	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+41	59	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	si	moderat	ocas_setm	normal	no	25+	organic	si	no	10
+42	57	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	si	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	7
+43	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+44	54	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	5
+45	58	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	3
+46	67	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	no	25+	organic	si	no	6
+47	53	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	diaria	anormal	no	25+	organic	si	no	6
+48	48	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+49	21	<=40	home	si	11+	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+50	69	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	diaria	normal	no	25+	organic	si	no	9
+51	21	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	1
+52	23	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+53	69	>40	home	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	<=25	no_organic	no	no	9
+54	41	>40	home	no	no/<=10	si	31+	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	11
+55	74	>40	home	no	no/<=10	si	no/<=30	2+/set	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	organic	si	no	9
+56	26	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+57	20	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+58	59	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+59	42	>40	dona	no	no/<=10	no	no/<=30	2+/set	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	si	7
+60	41	>40	dona	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	organic	no	si	4
+61	29	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	si	si	lleu	diaria	anormal	no	<=25	no_organic	no	no	7
+62	39	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	2
+63	47	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+64	51	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	si	si	lleu	ocas_setm	normal	no	25+	organic	si	no	9
+65	54	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	8
+66	29	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+67	48	>40	home	no	no/<=10	si	31+	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	8
+68	65	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	normal	si	25+	organic	si	no	9
+69	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+70	51	>40	home	si	11+	si	31+	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	<=25	organic	si	no	7
+71	60	>40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	7
+72	78	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	si	<=25	organic	no	si	7
+73	34	<=40	home	si	11+	si	31+	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	organic	si	no	5
+74	36	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	si	no	8
+75	72	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+76	61	>40	home	si	11+	si	no/<=30	no/oc	si	intens	brots	no	no	no	lleu	ocas_setm	anormal	si	25+	organic	no	si	8
+77	33	<=40	home	si	11+	si	31+	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	no	<=25	organic	no	si	8
+78	46	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	7
+79	70	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+80	42	>40	dona	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+81	26	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+82	66	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	normal	si	25+	no_organic	no	no	9
+83	21	<=40	dona	si	11+	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	<=25	no_organic	no	no	6
+84	46	>40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	7
+85	67	>40	dona	no	no/<=10	no	no/<=30	2+/set	no	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+86	46	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	si	no	no	lleu	ocas_setm	anormal	no	25+	organic	no	si	6
+87	45	>40	dona	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+88	48	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	moderat	brots	no	no	si	moderat	diaria	normal	si	25+	no_organic	no	no	10
+89	70	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	6
+90	55	>40	home	no	no/<=10	si	31+	no/oc	si	lleu	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+91	55	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	4
+92	63	>40	home	si	11+	si	no/<=30	no/oc	si	moderat	brots	si	no	si	lleu	ocas_setm	normal	si	<=25	organic	no	si	10
+93	45	>40	home	si	11+	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	no	si	8
+94	63	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	9
+95	66	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+96	49	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+97	25	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+98	21	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+99	69	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	no	si	no	lleu	ocas_setm	normal	si	25+	no_organic	no	no	10
+100	49	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	si	no	6
+101	55	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	si	<=25	organic	no	si	5
+102	31	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+103	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+104	30	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	7
+105	66	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+106	46	>40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	si	no	lleu	ocas_setm	anormal	no	25+	organic	no	si	8
+107	64	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+109	34	<=40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	0
+110	30	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+111	24	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+112	32	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+113	63	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	si	lleu	ocas_setm	normal	si	25+	organic	si	si	9
+114	26	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	brots	si	no	si	moderat	ocas_setm	normal	si	<=25	organic	si	si	9
+115	22	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+116	58	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+117	26	<=40	home	si	11+	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	organic	si	no	6
+119	29	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	diaria	anormal	si	25+	no_organic	no	no	7
+120	60	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	normal	si	25+	organic	no	si	6
+121	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	5
+122	28	<=40	home	si	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	7
+123	53	>40	home	si	11+	si	31+	no/oc	si	intens	no brots	si	no	si	intensa	ocas_setm	normal	si	25+	organic	no	si	12
+124	28	<=40	home	no	no/<=10	si	31+	no/oc	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	si	no	8
+125	30	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	7
+126	55	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	brots	si	si	si	moderat	ocas_setm	normal	no	25+	organic	no	si	10
+127	26	<=40	dona	si	11+	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	4
+128	46	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	diaria	anormal	no	<=25	no_organic	no	no	5
+129	54	>40	home	si	11+	no	no/<=30	2+/set	si	intens	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	organic	si	no	8
+130	37	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+131	26	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	si	moderat	ocas_setm	normal	no	25+	organic	no	si	9
+132	45	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	ocas_setm	anormal	no	25+	no_organic	no	no	5
+133	51	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	diaria	anormal	no	25+	organic	si	no	6
+134	47	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	anormal	no	<=25	organic	no	si	4
+135	29	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	6
+136	24	<=40	home	si	11+	si	31+	no/oc	si	lleu	no brots	no	si	si	moderat	diaria	normal	no	<=25	organic	si	no	11
+137	46	>40	home	si	11+	si	no/<=30	no/oc	si	intens	brots	si	si	si	lleu	ocas_setm	anormal	si	<=25	no_organic	no	no	11
+138	30	<=40	home	no	no/<=10	si	31+	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+139	24	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+140	29	<=40	home	si	11+	si	31+	no/oc	si	moderat	no brots	si	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	8
+141	39	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	si	intensa	diaria	anormal	no	25+	organic	no	si	7
+142	41	>40	home	si	11+	si	31+	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	25+	organic	no	si	10
+143	43	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	8
+144	43	>40	home	si	no/<=10	si	31+	2+/set	si	intens	no brots	si	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	13
+145	43	>40	dona	si	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	organic	no	si	3
+146	44	>40	home	no	no/<=10	si	31+	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	7
+147	58	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	organic	si	no	5
+148	61	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	si	25+	organic	si	no	10
+149	22	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+150	54	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	si	no	si	intensa	diaria	normal	no	25+	organic	si	no	10
+151	27	<=40	home	si	11+	si	31+	2+/set	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	<=25	organic	si	no	11
+152	58	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+153	49	>40	dona	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+154	21	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+155	45	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	9
+156	56	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	si	no	si	intensa	ocas_setm	normal	no	25+	organic	si	no	8
+157	61	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+158	24	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	4
+159	64	>40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	normal	no	25+	organic	no	si	8
+160	48	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	9
+161	59	>40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	organic	si	no	7
+162	48	>40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+163	28	<=40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	7
+164	67	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	si	si	lleu	ocas_setm	anormal	si	25+	organic	si	no	8
+165	54	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+166	51	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+167	60	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	6
+168	61	>40	home	si	11+	no	no/<=30	2+/set	si	moderat	brots	si	si	si	moderat	ocas_setm	normal	si	25+	no_organic	no	no	15
+169	15	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+170	65	>40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	si	lleu	ocas_setm	normal	si	<=25	organic	no	si	11
+171	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+172	31	<=40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+173	29	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	no	<=25	no_organic	no	no	7
+174	40	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+175	57	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+176	19	<=40	dona	si	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	0
+177	27	<=40	home	si	11+	si	31+	no/oc	si	lleu	brots	no	si	si	moderat	diaria	normal	no	<=25	organic	no	si	12
+178	19	<=40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	6
+179	23	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+180	77	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	si	<=25	no_organic	no	no	5
+181	32	<=40	dona	si	no/<=10	no	no/<=30	2+/set	si	intens	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+182	28	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	diaria	anormal	no	<=25	organic	no	si	6
+183	54	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	si	25+	no_organic	no	no	11
+184	48	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+185	59	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	diaria	anormal	no	25+	no_organic	no	no	6
+186	41	>40	dona	no	no/<=10	si	31+	no/oc	si	intens	brots	no	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	6
+187	59	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	8
+188	39	<=40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	si	25+	organic	si	si	8
+189	48	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	moderat	brots	si	si	si	moderat	ocas_setm	anormal	no	25+	organic	no	si	9
+190	69	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	si	no	lleu	ocas_setm	normal	no	25+	organic	no	si	7
+191	37	<=40	home	si	11+	si	31+	no/oc	si	intens	brots	si	no	no	lleu	ocas_setm	normal	si	<=25	organic	si	si	8
+192	54	>40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	6
+193	41	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	si	no	7
+194	66	>40	dona	no	no/<=10	no	no/<=30	2+/set	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	<=25	organic	si	no	9
+195	57	>40	home	si	11+	si	no/<=30	no/oc	si	intens	brots	si	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	8
+196	37	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	7
+197	61	>40	home	si	11+	no	no/<=30	no/oc	si	intens	brots	si	si	no	lleu	ocas_setm	normal	no	25+	organic	no	si	9
+198	55	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	si	25+	organic	si	no	10
+199	62	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	7
+200	22	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	4
+201	48	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+202	68	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	si	25+	no_organic	no	no	4
+203	22	<=40	home	si	11+	no	no/<=30	no/oc	si	intens	brots	no	si	si	intensa	ocas_setm	normal	no	25+	no_organic	no	no	11
+204	52	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+205	39	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+206	50	>40	home	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+207	63	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	5
+208	55	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	5
+209	57	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	no_organic	no	no	6
+210	42	>40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	5
+211	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+212	17	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	organic	si	no	6
+213	46	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	6
+214	60	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+215	22	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	si	<=25	no_organic	no	no	8
+216	33	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	1
+218	45	>40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+219	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+220	38	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	si	si	lleu	diaria	normal	no	<=25	organic	no	si	8
+221	34	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	si	si	lleu	ocas_setm	normal	no	25+	organic	no	si	9
+222	48	>40	home	si	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	si	<=25	no_organic	no	no	8
+223	23	<=40	dona	si	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+224	67	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+225	77	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	normal	no	<=25	no_organic	no	no	9
+226	40	<=40	home	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+227	31	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	6
+228	56	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	normal	si	25+	no_organic	no	no	8
+229	40	<=40	home	si	11+	si	no/<=30	no/oc	no	lleu	brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	7
+230	23	<=40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	2
+231	68	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+232	35	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+233	43	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	normal	si	25+	no_organic	no	no	8
+234	67	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+235	49	>40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	8
+236	61	>40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	si	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	10
+237	64	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	no_organic	no	no	7
+238	28	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+239	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	4
+240	76	>40	home	no	no/<=10	si	31+	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	si	25+	organic	si	no	7
+241	26	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+242	28	<=40	dona	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	organic	no	si	2
+243	83	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+244	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+245	45	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	8
+246	43	>40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	9
+247	47	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	7
+248	67	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	10
+249	26	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+250	23	<=40	dona	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+251	58	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	lleu	ocas_setm	normal	no	25+	organic	si	no	5
+252	17	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+253	40	<=40	home	si	11+	si	31+	no/oc	si	intens	brots	si	si	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	10
+254	25	<=40	dona	si	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+255	80	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+256	59	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+257	63	>40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	si	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	8
+258	47	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	organic	no	si	5
+259	57	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	brots	no	si	si	moderat	ocas_setm	normal	no	25+	organic	si	no	10
+260	55	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	4
+261	29	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+262	48	>40	home	si	no/<=10	si	31+	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	organic	no	si	6
+263	41	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	no	lleu	ocas_setm	anormal	si	<=25	organic	no	si	6
+265	85	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	3
+266	70	>40	dona	no	no/<=10	si	no/<=30	2+/set	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	6
+267	23	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	8
+268	41	>40	home	si	11+	si	31+	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	9
+270	59	>40	home	si	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	si	25+	organic	si	no	9
+271	16	<=40	home	si	11+	si	no/<=30	no/oc	si	moderat	brots	si	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	9
+272	16	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	organic	si	no	5
+273	34	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	4
+274	35	<=40	home	si	no/<=10	si	no/<=30	no/oc	si	intens	brots	no	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	7
+275	62	>40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	si	25+	organic	no	si	8
+276	20	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+277	18	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+278	24	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	no	lleu	ocas_setm	normal	no	<=25	organic	si	si	4
+279	19	<=40	dona	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+280	29	<=40	dona	si	11+	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+281	35	<=40	dona	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	diaria	anormal	no	<=25	no_organic	no	no	5
+282	37	<=40	home	no	no/<=10	si	31+	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	si	25+	no_organic	no	no	10
+283	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	7
+284	21	<=40	home	si	11+	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	9
+285	52	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	anormal	no	25+	no_organic	no	no	5
+286	55	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	brots	si	si	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	9
+287	35	<=40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	7
+288	71	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+289	40	<=40	dona	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	si	si	si	moderat	diaria	normal	no	<=25	no_organic	no	no	7
+290	81	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+291	57	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	diaria	anormal	si	25+	no_organic	no	no	8
+292	39	<=40	home	si	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+293	49	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	no	si	no	lleu	ocas_setm	normal	si	25+	organic	no	si	8
+294	56	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	intensa	ocas_setm	normal	no	25+	no_organic	no	no	6
+295	36	<=40	home	si	11+	si	31+	no/oc	si	moderat	no brots	si	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	7
+296	22	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+297	43	>40	home	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	si	si	si	lleu	ocas_setm	normal	no	25+	organic	si	no	11
+298	27	<=40	home	si	11+	no	no/<=30	no/oc	si	intens	brots	si	no	si	intensa	diaria	normal	no	<=25	organic	si	no	10
+299	40	<=40	home	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	<=25	no_organic	no	no	7
+300	64	>40	home	si	11+	si	no/<=30	2+/set	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	si	<=25	organic	si	no	12
+301	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	si	lleu	ocas_setm	normal	si	25+	organic	no	si	7
+302	42	>40	home	si	11+	si	no/<=30	no/oc	si	intens	no brots	si	si	si	intensa	diaria	normal	no	25+	organic	no	si	13
+303	60	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	4
+304	35	<=40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	si	si	si	moderat	ocas_setm	normal	no	25+	organic	si	no	10
+305	46	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	si	si	intensa	diaria	normal	si	25+	organic	si	si	15
+306	27	<=40	home	si	11+	si	31+	no/oc	si	lleu	no brots	no	si	si	intensa	diaria	anormal	no	<=25	organic	no	si	11
+307	42	>40	dona	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+308	37	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	si	<=25	organic	si	no	8
+309	62	>40	home	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	si	10
+310	19	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	si	si	moderat	ocas_setm	normal	no	<=25	organic	si	si	5
+311	37	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+312	37	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	3
+314	32	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+315	18	<=40	dona	si	11+	no	no/<=30	no/oc	si	intens	no brots	si	no	si	intensa	diaria	normal	no	<=25	no_organic	no	no	7
+317	19	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	4
+318	48	>40	home	no	no/<=10	si	31+	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	9
+319	53	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	si	moderat	ocas_setm	normal	si	25+	organic	si	si	11
+320	20	<=40	dona	si	11+	no	no/<=30	no/oc	si	intens	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+321	37	<=40	home	si	11+	si	31+	no/oc	si	intens	brots	si	si	si	moderat	ocas_setm	normal	no	<=25	organic	si	si	10
+322	30	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	no	<=25	organic	si	no	6
+323	52	>40	home	si	11+	si	31+	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	anormal	si	<=25	organic	no	si	10
+324	26	<=40	home	no	no/<=10	no	no/<=30	2+/set	no	lleu	no brots	no	no	si	lleu	diaria	normal	no	<=25	organic	no	si	9
+325	27	<=40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	si	no	si	moderat	diaria	anormal	no	25+	organic	si	no	9
+326	32	<=40	home	si	11+	no	no/<=30	no/oc	si	intens	no brots	si	si	si	intensa	ocas_setm	normal	no	25+	organic	si	si	10
+327	70	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	ocas_setm	normal	no	25+	organic	no	si	7
+328	36	<=40	home	si	11+	si	31+	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	organic	si	no	7
+329	36	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+330	42	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+331	51	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	si	si	moderat	ocas_setm	normal	no	25+	organic	si	si	10
+332	32	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+333	24	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	<=25	organic	si	no	8
+334	42	>40	home	si	11+	si	31+	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	12
+335	42	>40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	si	si	moderat	ocas_setm	normal	no	25+	organic	si	si	8
+336	20	<=40	home	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	organic	si	no	5
+337	22	<=40	dona	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	3
+338	25	<=40	home	si	11+	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	diaria	normal	no	<=25	organic	si	no	8
+339	47	>40	home	si	no/<=10	si	31+	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	si	<=25	organic	no	si	9
+340	41	>40	dona	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	anormal	no	25+	organic	no	si	5
+341	50	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	<=25	no_organic	no	no	8
+342	74	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	anormal	no	25+	no_organic	no	no	6
+343	55	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	no	25+	no_organic	no	no	6
+344	57	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+345	74	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+346	79	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+347	34	<=40	home	no	no/<=10	si	31+	no/oc	si	moderat	no brots	no	no	si	moderat	diaria	normal	no	<=25	organic	si	no	8
+348	26	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	4
+349	65	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	si	no	7
+350	58	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	8
+351	26	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	si	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	5
+352	26	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+353	54	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	6
+354	42	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+355	54	>40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	8
+356	20	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+357	68	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	7
+358	63	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	7
+359	23	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+360	25	<=40	home	si	no/<=10	si	31+	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	9
+361	39	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+362	38	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+363	80	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	6
+364	28	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+365	60	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	anormal	no	25+	no_organic	no	no	6
+366	29	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	8
+367	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	si	no	lleu	ocas_setm	anormal	si	25+	organic	no	si	6
+368	36	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	si	si	moderat	ocas_setm	anormal	si	<=25	organic	no	si	9
+369	58	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	si	si	no	lleu	ocas_setm	normal	si	<=25	organic	no	si	7
+370	45	>40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+371	18	<=40	home	si	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	4
+372	61	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	diaria	normal	no	<=25	no_organic	no	no	6
+373	32	<=40	home	si	no/<=10	si	no/<=30	no/oc	si	lleu	brots	si	si	no	lleu	ocas_setm	anormal	si	<=25	organic	no	si	7
+374	41	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	moderat	diaria	normal	no	25+	no_organic	no	no	8
+375	48	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	si	25+	no_organic	no	no	8
+376	69	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+377	74	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+378	76	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	6
+379	76	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+380	53	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	si	no	no	lleu	ocas_setm	normal	no	25+	organic	si	no	4
+381	30	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	si	si	moderat	diaria	normal	no	25+	organic	no	si	8
+382	24	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+383	22	<=40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	si	25+	organic	no	si	12
+384	27	<=40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	diaria	normal	no	25+	organic	si	no	8
+385	33	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+386	74	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	6
+387	57	>40	home	si	no/<=10	si	31+	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	8
+388	60	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	si	si	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	6
+389	20	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	9
+390	59	>40	dona	si	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	si	25+	no_organic	no	no	5
+391	27	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+392	61	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	3
+393	47	>40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+394	44	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+395	27	<=40	dona	si	no/<=10	si	no/<=30	no/oc	si	moderat	brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	5
+396	56	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	4
+397	44	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+398	43	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+399	35	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
+400	19	<=40	dona	si	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+401	35	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+402	44	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	5
+403	52	>40	home	si	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+404	26	<=40	home	si	11+	si	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	anormal	si	<=25	no_organic	no	no	7
+405	41	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	no	no	si	lleu	ocas_setm	anormal	si	25+	organic	no	si	10
+406	56	>40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	10
+407	36	<=40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	<=25	organic	si	no	7
+408	47	>40	home	si	no/<=10	si	31+	no/oc	si	lleu	brots	si	no	si	moderat	ocas_setm	normal	si	25+	organic	si	si	11
+409	30	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	si	no	si	moderat	diaria	normal	no	25+	organic	si	no	8
+410	52	>40	home	si	11+	no	no/<=30	no/oc	si	moderat	brots	si	no	no	lleu	ocas_setm	normal	no	<=25	organic	no	si	6
+411	43	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	si	si	si	moderat	ocas_setm	normal	no	25+	organic	si	no	7
+412	32	<=40	home	si	11+	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	7
+413	37	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	si	no	5
+414	48	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	10
+415	44	>40	home	si	11+	si	31+	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	11
+416	24	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	normal	si	25+	organic	si	no	11
+417	38	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	si	moderat	ocas_setm	normal	no	<=25	organic	no	si	6
+418	33	<=40	home	si	11+	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	organic	si	no	7
+419	52	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	si	si	lleu	ocas_setm	normal	no	25+	organic	si	no	10
+420	46	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	si	no	9
+421	20	<=40	home	si	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	organic	no	si	5
+422	40	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	lleu	diaria	normal	no	25+	organic	si	no	8
+423	62	>40	home	no	no/<=10	si	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	normal	no	<=25	organic	si	no	6
+424	47	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	7
+425	34	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	si	no	si	lleu	ocas_setm	normal	no	<=25	organic	si	no	5
+426	52	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	intensa	diaria	normal	no	25+	organic	si	no	10
+427	47	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	si	intensa	diaria	normal	no	25+	organic	si	no	11
+428	64	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	diaria	normal	no	25+	organic	si	no	7
+429	74	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	diaria	anormal	no	25+	organic	si	no	8
+430	22	<=40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	diaria	anormal	no	<=25	organic	si	si	7
+431	67	>40	home	si	11+	no	no/<=30	2+/set	si	moderat	no brots	si	si	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	11
+432	40	<=40	home	si	11+	si	31+	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	si	si	9
+433	48	>40	dona	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	si	8
+434	64	>40	home	no	no/<=10	si	31+	no/oc	si	lleu	no brots	no	no	si	intensa	ocas_setm	normal	no	25+	organic	no	si	9
+435	43	>40	home	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	si	<=25	organic	no	si	8
+436	47	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	organic	no	si	5
+437	51	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+438	66	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+439	20	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	brots	si	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+440	42	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	si	no	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	4
+441	20	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	si	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	3
+442	48	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	lleu	diaria	normal	no	25+	no_organic	no	no	9
+443	44	>40	dona	si	11+	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	4
+444	71	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	3
+445	39	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	4
+446	71	>40	home	no	no/<=10	si	31+	no/oc	si	intens	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+447	64	>40	home	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	no_organic	no	no	10
+448	28	<=40	dona	si	11+	no	no/<=30	no/oc	si	intens	no brots	no	si	si	intensa	diaria	normal	no	<=25	organic	no	si	9
+449	42	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	si	si	intensa	ocas_setm	anormal	no	25+	organic	si	no	9
+454	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	si	no	si	lleu	diaria	anormal	no	25+	no_organic	no	no	6
+456	46	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	intensa	diaria	normal	no	<=25	organic	si	si	11
+466	64	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+471	40	<=40	home	si	11+	si	31+	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	no_organic	no	no	7
+490	32	<=40	dona	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+491	71	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+492	40	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	5
+493	54	>40	dona	no	no/<=10	si	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	2
+494	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+495	26	<=40	home	no	no/<=10	si	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+496	32	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	no	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	1
+497	37	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	diaria	anormal	no	25+	no_organic	no	no	5
+498	41	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+499	50	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+500	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	no_organic	no	no	7
+501	66	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	2
+502	66	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	si	no	no	lleu	ocas_setm	anormal	no	25+	organic	no	si	4
+503	84	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	no_organic	no	no	7
+504	74	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	si	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	6
+505	54	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	no	si	7
+506	58	>40	home	si	11+	no	no/<=30	no/oc	si	lleu	brots	si	no	si	lleu	ocas_setm	anormal	no	25+	organic	no	si	8
+507	23	<=40	home	si	11+	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	no_organic	no	no	7
+508	32	<=40	home	no	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	25+	organic	si	no	9
+509	59	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	no	no	lleu	ocas_setm	normal	si	25+	organic	no	si	7
+510	52	>40	home	si	no/<=10	si	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	diaria	normal	no	<=25	organic	si	no	9
+511	62	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	no	si	5
+512	31	<=40	home	si	11+	si	31+	no/oc	si	intens	brots	si	no	si	moderat	ocas_setm	anormal	si	25+	no_organic	no	no	10
+513	43	>40	home	no	no/<=10	no	no/<=30	2+/set	si	moderat	no brots	no	no	si	lleu	ocas_setm	normal	no	<=25	organic	no	si	8
+514	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	no	7
+515	59	>40	home	si	no/<=10	no	no/<=30	2+/set	si	lleu	no brots	no	si	si	intensa	diaria	anormal	si	<=25	organic	si	si	14
+516	73	>40	home	no	no/<=10	si	31+	2+/set	no	lleu	no brots	no	no	si	intensa	diaria	anormal	no	25+	organic	si	si	12
+517	46	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	moderat	ocas_setm	normal	no	25+	organic	no	si	7
+518	65	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	intensa	ocas_setm	normal	no	<=25	no_organic	no	no	5
+519	61	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	si	intensa	ocas_setm	normal	no	25+	no_organic	no	no	8
+520	49	>40	dona	no	no/<=10	no	no/<=30	2+/set	si	intens	no brots	si	no	no	lleu	ocas_setm	normal	no	25+	no_organic	no	no	5
+521	46	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	intensa	ocas_setm	anormal	no	25+	no_organic	no	no	5
+522	21	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	ocas_setm	anormal	no	<=25	no_organic	no	no	2
+523	27	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	intensa	diaria	normal	no	<=25	organic	si	no	10
+524	54	>40	home	no	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	no	lleu	ocas_setm	anormal	no	25+	organic	no	si	4
+525	64	>40	dona	no	no/<=10	no	no/<=30	no/oc	no	lleu	no brots	no	no	si	moderat	ocas_setm	anormal	no	25+	organic	no	si	4
+526	31	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	0
+527	24	<=40	home	si	11+	no	no/<=30	no/oc	si	lleu	no brots	no	si	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	8
+530	19	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	intens	no brots	no	no	si	intensa	ocas_setm	normal	no	<=25	no_organic	no	no	4
+532	29	<=40	dona	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	si	si	moderat	ocas_setm	normal	no	<=25	no_organic	no	no	5
+533	53	>40	home	no	no/<=10	no	no/<=30	no/oc	si	moderat	no brots	no	no	si	moderat	diaria	normal	no	25+	organic	no	si	9
+534	34	<=40	dona	si	11+	no	no/<=30	no/oc	si	intens	no brots	si	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+535	43	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	lleu	ocas_setm	anormal	no	25+	no_organic	no	no	4
+536	25	<=40	dona	si	no/<=10	no	no/<=30	no/oc	si	lleu	brots	no	no	no	lleu	ocas_setm	anormal	no	<=25	no_organic	no	no	1
+537	31	<=40	dona	si	11+	no	no/<=30	no/oc	si	moderat	no brots	si	no	si	moderat	diaria	normal	no	<=25	organic	si	no	6
+538	50	>40	dona	no	no/<=10	no	no/<=30	no/oc	si	lleu	no brots	no	no	si	moderat	ocas_setm	normal	no	25+	organic	si	no	5
+539	24	<=40	home	si	no/<=10	no	no/<=30	no/oc	si	moderat	brots	no	no	si	lleu	ocas_setm	normal	no	<=25	no_organic	no	no	6
