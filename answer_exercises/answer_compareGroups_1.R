@@ -15,7 +15,7 @@ dd <- data.frame(
 )
 
 group <- as.factor(sample(c("A", "B"), n, rep=TRUE))
-
+head(dd)
 
 #
 # Exercise 1
@@ -72,7 +72,6 @@ pval <- function(x, y) {
   }
   p
 }
-
 
 compareGroups(dd, group)
 
